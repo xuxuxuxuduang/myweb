@@ -6,7 +6,7 @@ MAINTAINER Sunny.xiao "Sunny.xiao@qq.com"
 VOLUME /tmp
 
 # add project jar file into docker
-ADD ssf-guide-center.jar app.jar
+ADD web.jar app.jar
 
 ADD boot.sh boot.sh
 ADD wait-for-it.sh /wait-for-it.sh
