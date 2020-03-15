@@ -1,0 +1,6 @@
+#
+# bootstrap.yml配置文件优先级最高,加载该文件的属性配置之后不会被覆盖,applicaiton.yml配置的属性可以动态修改.
+# 所有application-{xxx}.yml 加载之后还会加载applicaiton.yml默认配置，并且会覆盖已经加载的配置信息
+spring:
+  profiles:
+    active: dev

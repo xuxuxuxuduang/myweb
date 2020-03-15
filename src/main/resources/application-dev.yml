@@ -1,0 +1,6 @@
+phantom:
+  tempPath: D:\temp\img
+  BLANK: ' '
+  binPath: D:\aaa\phantomjs-2.1.1-windows\bin\phantomjs.exe
+  imageJsPath: D:\aaa\phantomjs-2.1.1-windows\rasterize.js
+  codeJsPath: D:\aaa\phantomjs-2.1.1-windows\code.js
