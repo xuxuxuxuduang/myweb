@@ -3,6 +3,7 @@ package com.paopao.web.biz;
 import com.paopao.web.biz.baseBiz.AbsBaseBiz;
 import com.paopao.web.config.HttpClientDownloader;
 import com.paopao.web.pipeline.BaiduPipeline;
+import com.paopao.web.pipeline.baidu.BaiduComparePipeline;
 import com.paopao.web.util.PhantomTools;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.CollectionUtils;
@@ -96,11 +97,11 @@ public class BaiduBiz extends AbsBaseBiz {
         Spider.create(this)
                 .setDownloader(httpClientDownloader)
                 .addUrl(url)
-                .addPipeline(new BaiduPipeline()).thread(1).run();
+                .addPipeline(new BaiduComparePipeline()).thread(1).run();
     }
 
     public static void main(String[] args) {
-        BaiduBiz baiduBiz = new BaiduBiz(1, 10, 44, "科大讯飞", "4");
+        BaiduBiz baiduBiz = new BaiduBiz(1, 10, 1, "科大讯飞", "4");
         baiduBiz.doSearch();
     }
 }
